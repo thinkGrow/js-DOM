@@ -12,24 +12,78 @@
 
     <header>
         <h1>Welcome to my DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eligendi voluptas voluptatem tempore?
+            Aspernatur eum reprehenderit iure sapiente dolore illo eius obcaecati reiciendis commodi aliquid aperiam,
+            velit dolorum suscipit! Perspiciatis laboriosam deleniti ad quasi soluta, perferendis debitis adipisci! Nemo
+            totam ab provident animi rerum nostrum, natus accusamus, repudiandae, blanditiis adipisci nam. Magnam
+            pariatur deleniti nam voluptatum nostrum et mollitia temporibus rerum officiis deserunt. Ab rerum provident
+            enim sed esse fugiat voluptatibus repudiandae iure dolore quaerat dignissimos tenetur beatae, est, at neque
+            quisquam obcaecati illo distinctio unde quas aperiam. Quae, delectus dignissimos consectetur ratione
+            voluptatum amet! Corporis repellendus numquam maiores sapiente!</p>
     </header>
 
     <main>
-        <h1>my awesome DOM</h1>
+        <section>
+            <h1>my awesome DOM</h1>
 
-        <ul>
-            <li>Jalali</li>
-            <li>Shafeyet</li>
-            <li>Bonobash</li>
-        </ul>
+            <ul>
+                <li>Jalali</li>
+                <li>Shafeyet</li>
+                <li>Bonobash</li>
+            </ul>
+        </section>
+
+        <section class="fruits-container">
+            <h1>My favorite fruits</h1>
+            <ul>
+                <li class="important-fruits">apple</li>
+                <li class="important-fruits">mango</li>
+                <li class="important-fruits">watermelon</li>
+
+            </ul>
+
+        </section>
+
+        <section>
+            <h2 id="places">Places I like to visit</h2>
+
+            <ul>
+                <li>cox's</li>
+                <li>bandarban</li>
+                <li>rangamati</li>
+            </ul>
+        </section>
+
     </main>
 
     <script src="js/dom.js"></script>
-    <script>
-        const collectionLi = document.getElementsByTagName ('li');
+    <!-- <script>
+        const collectionLi = document.getElementsByTagName('li');
 
         for (const li of collectionLi) {
             console.log(li.innerText);
+        }
+    </script> -->
+
+    <!-- <script>
+        const fruits = document.getElementsByClassName('important-fruits')
+        for(const fruit of fruits){
+            console.log(fruit.innerText)
+        }
+    </script> -->
+
+    <!-- <script>
+        const placeTitle = document.getElementById('places');
+        placeTitle.innerText = 'places changed by JS';
+        console.log(placeTitle.innerText)
+    </script> -->
+
+    <script>
+        //querySelector
+        const someLi = document.querySelectorAll('.fruits-container li')
+
+        for (const fruit of someLi) {
+            console.log(fruit.innerText)
         }
     </script>
 
