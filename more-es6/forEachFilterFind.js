@@ -10,15 +10,22 @@ const products = [
 //   if (product.color === "gold") console.log(product);
 // });
 
-
 // filter
 // const newProducts = products.filter(product=>product.price>1000)
 // console.log(newProducts);
-
 
 // find returns the first find
 // const product = products.find(p => p.id === 4);
 // console.log(product)
 
-const product = products.find(p => p.color==="gold");
-console.log(product)
+// const product = products.find(p => p.color==="gold");
+// console.log(product)
+
+// const newProducts = products.map((p) => {
+//   if (p.brand === "apple") {
+//     p.price = p.price + 100;
+//   }
+//   return p;
+// });
+
+// console.log(newProducts);
